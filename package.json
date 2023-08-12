@@ -5,6 +5,7 @@
   "repository": "https://github.com/saturn30/kubernetes-study.git",
   "author": "saturn30 <soso01dev@gmail.com>",
   "license": "MIT",
+  "private": true,
   "workspaces": [
     "@apps/*"
   ]
