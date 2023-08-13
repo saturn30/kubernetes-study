@@ -20,3 +20,13 @@ kubectl proxy
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/workloads?namespace=default
 링크에서 취득한 토큰으로 로그인
 ```
+
+---
+
+nginx 인그레스 컨트롤러 설치
+참조 : https://kubernetes.github.io/ingress-nginx/
+
+설치
+`helm upgrade --install ingress-nginx ingress-nginx \
+  --repo https://kubernetes.github.io/ingress-nginx \
+  --namespace ingress-nginx --create-namespace`
