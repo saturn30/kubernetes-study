@@ -30,3 +30,11 @@ nginx 인그레스 컨트롤러 설치
 `helm upgrade --install ingress-nginx ingress-nginx \
   --repo https://kubernetes.github.io/ingress-nginx \
   --namespace ingress-nginx --create-namespace`
+
+---
+
+그라파나 설치
+https://github.com/prometheus-operator/kube-prometheus
+
+추천 대시보드
+https://grafana.com/grafana/dashboards/15758-kubernetes-views-namespaces/
