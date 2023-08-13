@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-web-deployment
+  labels:
+    app: test-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-web
+  template:
+    metadata:
+      labels:
+        app: test-web
+    spec:
+      containers:
+      - name: test-web
+        image: soso01dev/test-web:1.0.0
+        ports:
+        - containerPort: 3000
